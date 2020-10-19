@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate-crt": "./scripts/generate-csr.sh",
+    "dev": "node-dev --respawn src/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,12 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "node-dev": "^6.2.0",
     "prettier-standard": "^16.4.1"
+  },
+  "dependencies": {
+    "config": "^3.3.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }
