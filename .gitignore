@@ -2,3 +2,6 @@
 node_modules
 
 # Files
+*.csr
+*.key
+*.pem
